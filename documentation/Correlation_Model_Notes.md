@@ -1,0 +1,12 @@
+Which features are we going to keep (10 Features)?
+
+total_gdp_ppp_inflation_adjusted
+males_aged_25_54_labour_force_participation_rate_percent
+children_per_woman_total_fertility
+inflation_annual_percent
+cell_phones_per_100_people
+aged_25_54_labour_force_participation_rate_percent
+at_least_basic_water_source_overall_access_percent
+population_growth_annual_percent
+military_expenditure_percent_of_gdp
+sugar_per_person_g_per_day

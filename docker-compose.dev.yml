@@ -1,0 +1,21 @@
+services:
+  backend:
+    ports:
+      - 127.0.0.1:8000:8000
+    volumes:
+      - ./backend-project:/srv/backend-app
+    build:
+      context: backend-project
+      dockerfile: ./Dockerfile
+      target: dev
+
+  frontend:
+    build:
+      context: react-frontend
+      dockerfile: ./Dockerfile
+      target: dev
+    ports:
+      - 127.0.0.1:3000:3000
+    volumes:
+      - ./react-frontend:/srv
+      - /srv/node_modules

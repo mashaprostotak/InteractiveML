@@ -1,0 +1,6 @@
+apiVersion: v2
+name: c3-happiness-prediction #name of the app, this should be the project name, spaces should be substituted with -
+description: C3 Happiness Prediction #description for the app
+type: application
+version: 0.0.5 #for versioning of the helm chart, increase it when new release is built/deployed
+appVersion: "0.0.5"
