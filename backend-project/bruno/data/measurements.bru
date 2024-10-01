@@ -1,0 +1,23 @@
+meta {
+  name: measurements
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/v1/data/measurements?indicators=log_gdp_per_capita,life_ladder&year_start=2018&year_end=2022&happiness_score_min=7.0
+  body: none
+  auth: none
+}
+
+query {
+  indicators: log_gdp_per_capita,life_ladder
+  year_start: 2018
+  year_end: 2022
+  happiness_score_min: 7.0
+  ~happiness_score_max: 
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:8000
+}

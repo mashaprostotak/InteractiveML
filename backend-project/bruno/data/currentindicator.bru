@@ -1,0 +1,36 @@
+meta {
+  name: currentindicator
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/v1/data/indicators/current
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "country_code": "CHE",
+    "current_year": "2022",
+    "indicators": [
+      {
+        "concept": "cell_phones_per_100_people",
+        "description": "Mobile cellular telephone subscriptions are subscriptions to a public mobile telephone service that provide access to the PSTN using cellular technology. The indicator includes (and is split into) the number of postpaid subscriptions, and the number of active prepaid accounts (i.e. that have been used during the last three months). The indicator applies to all mobile cellular subscriptions that offer voice communications. It excludes subscriptions via data cards or USB modems, subscriptions to public mobile data services, private trunked mobile radio, telepoint, radio paging and telemetry services.",
+        "name_catalog": "Cell phones /100 people",
+        "name_short": "Cell phones"
+      },
+      {
+        "concept": "child_mortality_0_5_year_olds_dying_per_1000_born",
+        "description": "Death of children under five years of age per 1,000 live births",
+        "name_catalog": "Child mortality",
+        "name_short": "Child mortality"
+      }
+    ]
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://127.0.0.1:8000
+}

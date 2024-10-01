@@ -1,0 +1,43 @@
+meta {
+  name: custom
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/v1/predictions/custom
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "policies": [
+      {
+        "name": "Policy A",
+        "cost": 10000,
+        "indicator": "aged_25_54_labour_force_participation_rate_percent",
+        "change": 2,
+        "years": 5,
+        "uncertainty": 100,
+        "userSelection": true
+      },
+      {
+        "name": "Policy B",
+        "cost": 20000,
+        "indicator": "sugar_per_person_g_per_day",
+        "change": -2,
+        "years": 5,
+        "uncertainty": 100,
+        "userSelection": false
+      }
+    ],
+    "budget": 30000,
+    "country": "CHE",
+    "years": 5
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://127.0.0.1:8000
+}
