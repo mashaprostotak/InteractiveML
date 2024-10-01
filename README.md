@@ -1,13 +1,11 @@
-# Project Title
-
-[[_TOC_]]
+# Predicting happiness levels for policies
 
 ## Team Members
 
-1. Julien Wolfensberger
-2. Hongshu Yan
-3. Mariia Eremeeva
-4. Alessandro Girardi
+1. Mariia Eremeeva
+2. Alessandro Girardi
+3. Julien Wolfensberger
+4. Hongshu Yan
 
 ## Project Description
 
@@ -169,25 +167,3 @@ Summary Milestone 3:
 - It was challenging to customize the chloropleth to do all of the things we wanted it to do
 - Had to implement a workaround for the confidence in the happiness chart, because no library we found directly supported confidence
 - Connected everything to our API already
-
-## Versioning
-
-Create stable versions of your code each week by using gitlab tags.\
-Take a look at [Gitlab Tags](https://docs.gitlab.com/ee/topics/git/tags.html) for more details.
-
-Then list here the weekly tags. \
-We will evaluate your code every week, based on the corresponding version.
-
-Tags:
-
-- Week 1: [Week 1 Tag](https://gitlab.inf.ethz.ch/COURSE-XAI-IML22/dummy-fullstack/-/tags/stable-readme)
-- Week 2: [Milestone II Tag](https://gitlab.inf.ethz.ch/course-xai-iml24/c3-happiness-prediction/-/tags/v2.0)
-- Week 3: [Milestone III Tag](https://gitlab.inf.ethz.ch/course-xai-iml24/c3-happiness-prediction/-/tags/v3.0)
-- ...
-
-## Contribution Statement
-
-- Julien Wolfensberger: implementation of the correlation model; prediction page UI and diagrams
-- Hongshu Yan: sketches and front-end implementation of the exploration page; some of the backend APIs
-- Mariia Eremeeva: page instructions, storyline and guidence visualization; some of the front-end elements of the exploration page
-- Alessandro Girardi: setup development environment; end-to-end utilities; endpoints documentation; setup of libraries used to build frontend; main model; predictions page form; bug-fixing; deployment.
